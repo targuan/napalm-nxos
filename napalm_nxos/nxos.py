@@ -57,6 +57,7 @@ class NXOSDriver(NetworkDriver):
         self.changed = False
         self.replace_file = None
         self.merge_candidate = ''
+        self.port = optional_args.get('port', 80)
 
         if optional_args is None:
             optional_args = {}
